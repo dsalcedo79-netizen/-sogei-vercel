@@ -47,12 +47,12 @@ export default function ListaEmpresas({ empresas, onRefresh }: ListaEmpresasProp
               </div>
             </div>
             <div className="col-plan">
-              <span className="badge badge-{empresa.plan}">
+              <span className={`badge badge-${empresa.plan}`}>
                 {empresa.plan}
               </span>
             </div>
             <div className="col-estado">
-              <span className="badge badge-{empresa.estado}">
+              <span className={`badge badge-${empresa.estado}`}>
                 {empresa.estado}
               </span>
             </div>

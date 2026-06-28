@@ -15,24 +15,6 @@ function App() {
         const { data: { session } } = await supabase.auth.getSession()
         setUser(session?.user ?? null)
       } catch (error) {
-        console.error("Error checking auth:",@'
-import { useState, useEffect } from "react"
-import "./App.css"
-import Login from "./components/Login"
-import Dashboard from "./components/Dashboard"
-import { supabase } from "./services/supabase"
-import type { User } from "@supabase/supabase-js"
-
-function App() {
-  const [user, setUser] = useState<User | null>(null)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        const { data: { session } } = await supabase.auth.getSession()
-        setUser(session?.user ?? null)
-      } catch (error) {
         console.error("Error checking auth:", error)
       } finally {
         setLoading(false)
