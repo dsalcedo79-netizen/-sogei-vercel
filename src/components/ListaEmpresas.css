@@ -1,0 +1,154 @@
+﻿.lista-empresas {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.no-empresas {
+  padding: 60px 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.no-empresas p:first-child {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.empresas-table {
+  overflow-x: auto;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 16px;
+  align-items: center;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.table-header {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.table-row:hover {
+  background: #f9fafb;
+}
+
+.empresa-info h4 {
+  margin-bottom: 4px;
+  color: #1f2937;
+}
+
+.empresa-info p {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-gratuito {
+  background-color: #10b981;
+}
+
+.badge-profesional {
+  background-color: #3b82f6;
+}
+
+.badge-empresarial {
+  background-color: #f59e0b;
+}
+
+.badge-activa {
+  background-color: #10b981;
+}
+
+.badge-inactiva {
+  background-color: #ef4444;
+}
+
+.btn-detalles {
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-detalles:hover {
+  background-color: #0052cc;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  font-size: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b7280;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.detail-group {
+  margin-bottom: 16px;
+}
+
+.detail-group label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.detail-group p {
+  color: #6b7280;
+}
